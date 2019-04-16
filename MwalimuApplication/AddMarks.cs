@@ -35,7 +35,7 @@ namespace MwalimuApplication
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                command.CommandText = "insert into Term1Marks ([AdmissionNumber],[Mathematics],[English],[Kiswahili],[Science],[SST/RE],[Total],[Average],[Grade]) values('" + bunifuMaterialTextbox9 + "','" + bunifuMaterialTextbox1 + "','" + bunifuMaterialTextbox2.Text + "','" + bunifuMaterialTextbox3.Text + "','" + bunifuMaterialTextbox4.Text + "','" + bunifuMaterialTextbox5.Text + "','" + bunifuMaterialTextbox7.Text + "','" + bunifuMaterialTextbox6.Text + "','" + bunifuMaterialTextbox8.Text + "')";
+                command.CommandText = "insert into Term1Marks ([AdmissionNumber],[Mathematics],[English],[Kiswahili],[Science],[SST/RE],[Total],[Average],[Grade]) values('" + bunifuMaterialTextbox9.Text + "','" + bunifuMaterialTextbox1.Text + "','" + bunifuMaterialTextbox2.Text + "','" + bunifuMaterialTextbox3.Text + "','" + bunifuMaterialTextbox4.Text + "','" + bunifuMaterialTextbox5.Text + "','" + bunifuMaterialTextbox7.Text + "','" + bunifuMaterialTextbox6.Text + "','" + bunifuMaterialTextbox8.Text + "')";
 
                 command.ExecuteNonQuery();
 
@@ -56,7 +56,7 @@ namespace MwalimuApplication
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                command.CommandText = "insert into Term2Marks ([AdmissionNumber],[Mathematics],[English],[Kiswahili],[Science],[SST/RE],[Total],[Average],[Grade]) values('" + bunifuMaterialTextbox9 + "','" + bunifuMaterialTextbox1 + "','" + bunifuMaterialTextbox2.Text + "','" + bunifuMaterialTextbox3.Text + "','" + bunifuMaterialTextbox4.Text + "','" + bunifuMaterialTextbox5.Text + "','" + bunifuMaterialTextbox7.Text + "','" + bunifuMaterialTextbox6.Text + "','" + bunifuMaterialTextbox8.Text + "')";
+                command.CommandText = "insert into Term2Marks ([AdmissionNumber],[Mathematics],[English],[Kiswahili],[Science],[SST/RE],[Total],[Average],[Grade]) values('" + bunifuMaterialTextbox9.Text + "','" + bunifuMaterialTextbox1.Text + "','" + bunifuMaterialTextbox2.Text + "','" + bunifuMaterialTextbox3.Text + "','" + bunifuMaterialTextbox4.Text + "','" + bunifuMaterialTextbox5.Text + "','" + bunifuMaterialTextbox7.Text + "','" + bunifuMaterialTextbox6.Text + "','" + bunifuMaterialTextbox8.Text + "')";
 
                 command.ExecuteNonQuery();
 
@@ -77,7 +77,7 @@ namespace MwalimuApplication
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                command.CommandText = "insert into Term3Marks ([AdmissionNumber],[Mathematics],[English],[Kiswahili],[Science],[SST/RE],[Total],[Average],[Grade]) values('" + bunifuMaterialTextbox9 + "','" + bunifuMaterialTextbox1 + "','" + bunifuMaterialTextbox2.Text + "','" + bunifuMaterialTextbox3.Text + "','" + bunifuMaterialTextbox4.Text + "','" + bunifuMaterialTextbox5.Text + "','" + bunifuMaterialTextbox7.Text + "','" + bunifuMaterialTextbox6.Text + "','" + bunifuMaterialTextbox8.Text + "')";
+                command.CommandText = "insert into Term3Marks ([AdmissionNumber],[Mathematics],[English],[Kiswahili],[Science],[SST/RE],[Total],[Average],[Grade]) values('" + bunifuMaterialTextbox9.Text + "','" + bunifuMaterialTextbox1.Text + "','" + bunifuMaterialTextbox2.Text + "','" + bunifuMaterialTextbox3.Text + "','" + bunifuMaterialTextbox4.Text + "','" + bunifuMaterialTextbox5.Text + "','" + bunifuMaterialTextbox7.Text + "','" + bunifuMaterialTextbox6.Text + "','" + bunifuMaterialTextbox8.Text + "')";
 
                 command.ExecuteNonQuery();
 

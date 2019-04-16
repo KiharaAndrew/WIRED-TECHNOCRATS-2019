@@ -42,3 +42,4 @@ C:\Users\Lynette\source\repos\MwalimuApplication\obj\Debug\MwalimuApplication.ex
 C:\Users\Lynette\source\repos\MwalimuApplication\obj\Debug\MwalimuApplication.pdb
 C:\Users\Lynette\source\repos\MwalimuApplication\obj\Debug\MwalimuApplication.csprojAssemblyReference.cache
 C:\Users\Lynette\source\repos\MwalimuApplication\obj\Debug\MwalimuApplication.ExitMessage.resources
+C:\Users\Lynette\source\repos\MwalimuApplication\obj\Debug\MwalimuApplication.Marks.resources

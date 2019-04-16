@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditMarks));
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuMaterialTextbox8 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -56,34 +55,17 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Term1 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Term2 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Term3 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.termthree = new System.Windows.Forms.Label();
+            this.termone = new System.Windows.Forms.Label();
+            this.termtwo = new System.Windows.Forms.Label();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Edit";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(653, 421);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(94, 45);
-            this.bunifuThinButton21.TabIndex = 23;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.BunifuThinButton21_Click);
             // 
             // bunifuMaterialTextbox8
             // 
@@ -97,13 +79,12 @@
             this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox8.LineThickness = 4;
-            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(694, 290);
+            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(562, 249);
             this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox8.Name = "bunifuMaterialTextbox8";
             this.bunifuMaterialTextbox8.Size = new System.Drawing.Size(120, 44);
             this.bunifuMaterialTextbox8.TabIndex = 19;
             this.bunifuMaterialTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox8.Visible = false;
             // 
             // bunifuMaterialTextbox7
             // 
@@ -117,13 +98,12 @@
             this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox7.LineThickness = 4;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(694, 238);
+            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(562, 197);
             this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
             this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(120, 44);
             this.bunifuMaterialTextbox7.TabIndex = 18;
             this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox7.Visible = false;
             // 
             // bunifuMaterialTextbox6
             // 
@@ -137,13 +117,12 @@
             this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox6.LineThickness = 4;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(694, 186);
+            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(562, 145);
             this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
             this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(120, 44);
             this.bunifuMaterialTextbox6.TabIndex = 17;
             this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox6.Visible = false;
             // 
             // bunifuMaterialTextbox5
             // 
@@ -157,7 +136,7 @@
             this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox5.LineThickness = 4;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(303, 357);
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(183, 363);
             this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
             this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(234, 44);
@@ -176,7 +155,7 @@
             this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox4.LineThickness = 4;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(303, 305);
+            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(183, 311);
             this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(234, 44);
@@ -195,7 +174,7 @@
             this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox3.LineThickness = 4;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(303, 253);
+            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(183, 259);
             this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(234, 44);
@@ -214,7 +193,7 @@
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox2.LineThickness = 4;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(303, 197);
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(183, 203);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(234, 44);
@@ -233,7 +212,7 @@
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox1.LineThickness = 4;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(303, 145);
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(183, 151);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(234, 44);
@@ -269,7 +248,7 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuThinButton23.Location = new System.Drawing.Point(442, 421);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(606, 419);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(199, 45);
@@ -289,7 +268,7 @@
             this.bunifuMaterialTextbox9.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox9.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox9.LineThickness = 4;
-            this.bunifuMaterialTextbox9.Location = new System.Drawing.Point(302, 97);
+            this.bunifuMaterialTextbox9.Location = new System.Drawing.Point(182, 103);
             this.bunifuMaterialTextbox9.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox9.Name = "bunifuMaterialTextbox9";
             this.bunifuMaterialTextbox9.Size = new System.Drawing.Size(234, 44);
@@ -318,7 +297,7 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(759, 421);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(817, 419);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(112, 45);
@@ -332,7 +311,7 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label9.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(623, 306);
+            this.label9.Location = new System.Drawing.Point(491, 265);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 23);
             this.label9.TabIndex = 36;
@@ -344,7 +323,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label8.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(580, 251);
+            this.label8.Location = new System.Drawing.Point(448, 210);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 23);
             this.label8.TabIndex = 35;
@@ -356,7 +335,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label7.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(606, 201);
+            this.label7.Location = new System.Drawing.Point(474, 160);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 23);
             this.label7.TabIndex = 34;
@@ -368,7 +347,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label6.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(155, 366);
+            this.label6.Location = new System.Drawing.Point(35, 372);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(141, 23);
             this.label6.TabIndex = 33;
@@ -380,7 +359,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label5.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(224, 311);
+            this.label5.Location = new System.Drawing.Point(104, 317);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 23);
             this.label5.TabIndex = 32;
@@ -392,7 +371,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label4.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(218, 259);
+            this.label4.Location = new System.Drawing.Point(98, 265);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 23);
             this.label4.TabIndex = 31;
@@ -404,7 +383,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label3.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(232, 207);
+            this.label3.Location = new System.Drawing.Point(112, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 23);
             this.label3.TabIndex = 30;
@@ -416,7 +395,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label2.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(182, 156);
+            this.label2.Location = new System.Drawing.Point(62, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 23);
             this.label2.TabIndex = 29;
@@ -428,7 +407,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.label1.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(139, 107);
+            this.label1.Location = new System.Drawing.Point(19, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 23);
             this.label1.TabIndex = 28;
@@ -459,12 +438,213 @@
             this.panel1.Size = new System.Drawing.Size(1000, 57);
             this.panel1.TabIndex = 38;
             // 
+            // Term1
+            // 
+            this.Term1.ActiveBorderThickness = 1;
+            this.Term1.ActiveCornerRadius = 20;
+            this.Term1.ActiveFillColor = System.Drawing.Color.Empty;
+            this.Term1.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term1.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Term1.BackgroundImage")));
+            this.Term1.ButtonText = "Save to Term1";
+            this.Term1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Term1.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Term1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term1.IdleBorderThickness = 1;
+            this.Term1.IdleCornerRadius = 20;
+            this.Term1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term1.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term1.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term1.Location = new System.Drawing.Point(741, 113);
+            this.Term1.Margin = new System.Windows.Forms.Padding(5);
+            this.Term1.Name = "Term1";
+            this.Term1.Size = new System.Drawing.Size(173, 34);
+            this.Term1.TabIndex = 41;
+            this.Term1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Term1.Click += new System.EventHandler(this.Term1_Click);
+            // 
+            // Term2
+            // 
+            this.Term2.ActiveBorderThickness = 1;
+            this.Term2.ActiveCornerRadius = 20;
+            this.Term2.ActiveFillColor = System.Drawing.Color.Empty;
+            this.Term2.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term2.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Term2.BackgroundImage")));
+            this.Term2.ButtonText = "Save to Term 2";
+            this.Term2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Term2.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Term2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term2.IdleBorderThickness = 1;
+            this.Term2.IdleCornerRadius = 20;
+            this.Term2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term2.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term2.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term2.Location = new System.Drawing.Point(762, 231);
+            this.Term2.Margin = new System.Windows.Forms.Padding(5);
+            this.Term2.Name = "Term2";
+            this.Term2.Size = new System.Drawing.Size(152, 40);
+            this.Term2.TabIndex = 40;
+            this.Term2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Term2.Click += new System.EventHandler(this.Term2_Click);
+            // 
+            // Term3
+            // 
+            this.Term3.ActiveBorderThickness = 1;
+            this.Term3.ActiveCornerRadius = 20;
+            this.Term3.ActiveFillColor = System.Drawing.Color.Empty;
+            this.Term3.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term3.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Term3.BackgroundImage")));
+            this.Term3.ButtonText = "Save to Term 3";
+            this.Term3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Term3.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Term3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term3.IdleBorderThickness = 1;
+            this.Term3.IdleCornerRadius = 20;
+            this.Term3.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term3.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.Term3.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.Term3.Location = new System.Drawing.Point(774, 329);
+            this.Term3.Margin = new System.Windows.Forms.Padding(5);
+            this.Term3.Name = "Term3";
+            this.Term3.Size = new System.Drawing.Size(155, 45);
+            this.Term3.TabIndex = 39;
+            this.Term3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Term3.Click += new System.EventHandler(this.Term3_Click);
+            // 
+            // termthree
+            // 
+            this.termthree.AutoSize = true;
+            this.termthree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.termthree.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.termthree.ForeColor = System.Drawing.Color.White;
+            this.termthree.Location = new System.Drawing.Point(797, 301);
+            this.termthree.Name = "termthree";
+            this.termthree.Size = new System.Drawing.Size(104, 23);
+            this.termthree.TabIndex = 42;
+            this.termthree.Text = "Load Term3";
+            this.termthree.Click += new System.EventHandler(this.Termthree_Click);
+            // 
+            // termone
+            // 
+            this.termone.AutoSize = true;
+            this.termone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.termone.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.termone.ForeColor = System.Drawing.Color.White;
+            this.termone.Location = new System.Drawing.Point(770, 85);
+            this.termone.Name = "termone";
+            this.termone.Size = new System.Drawing.Size(109, 23);
+            this.termone.TabIndex = 43;
+            this.termone.Text = "Load Term 1";
+            this.termone.Click += new System.EventHandler(this.Termone_Click);
+            // 
+            // termtwo
+            // 
+            this.termtwo.AutoSize = true;
+            this.termtwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.termtwo.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.termtwo.ForeColor = System.Drawing.Color.White;
+            this.termtwo.Location = new System.Drawing.Point(781, 203);
+            this.termtwo.Name = "termtwo";
+            this.termtwo.Size = new System.Drawing.Size(105, 23);
+            this.termtwo.TabIndex = 44;
+            this.termtwo.Text = "Load Term2";
+            this.termtwo.Click += new System.EventHandler(this.Termtwo_Click);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Empty;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Save to Term1";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(686, 362);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(173, 45);
+            this.bunifuThinButton21.TabIndex = 45;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.Empty;
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "Save to Term1";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 20;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton24.Location = new System.Drawing.Point(534, 317);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(173, 45);
+            this.bunifuThinButton24.TabIndex = 46;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton25
+            // 
+            this.bunifuThinButton25.ActiveBorderThickness = 1;
+            this.bunifuThinButton25.ActiveCornerRadius = 20;
+            this.bunifuThinButton25.ActiveFillColor = System.Drawing.Color.Empty;
+            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
+            this.bunifuThinButton25.ButtonText = "Save to Term1";
+            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton25.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton25.IdleBorderThickness = 1;
+            this.bunifuThinButton25.IdleCornerRadius = 20;
+            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
+            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
+            this.bunifuThinButton25.Location = new System.Drawing.Point(741, 150);
+            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton25.Name = "bunifuThinButton25";
+            this.bunifuThinButton25.Size = new System.Drawing.Size(173, 39);
+            this.bunifuThinButton25.TabIndex = 47;
+            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // EditMarks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(1000, 478);
+            this.Controls.Add(this.bunifuThinButton25);
+            this.Controls.Add(this.bunifuThinButton24);
+            this.Controls.Add(this.bunifuThinButton21);
+            this.Controls.Add(this.termtwo);
+            this.Controls.Add(this.termone);
+            this.Controls.Add(this.termthree);
+            this.Controls.Add(this.Term1);
+            this.Controls.Add(this.Term2);
+            this.Controls.Add(this.Term3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.label9);
@@ -479,7 +659,6 @@
             this.Controls.Add(this.bunifuMaterialTextbox9);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuMaterialTextbox8);
             this.Controls.Add(this.bunifuMaterialTextbox7);
             this.Controls.Add(this.bunifuMaterialTextbox6);
@@ -492,7 +671,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditMarks";
             this.Text = "EditMarks";
-            this.Load += new System.EventHandler(this.EditMarks_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -501,8 +679,6 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
@@ -528,5 +704,14 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
+        private Bunifu.Framework.UI.BunifuThinButton2 Term1;
+        private Bunifu.Framework.UI.BunifuThinButton2 Term2;
+        private Bunifu.Framework.UI.BunifuThinButton2 Term3;
+        private System.Windows.Forms.Label termtwo;
+        private System.Windows.Forms.Label termone;
+        private System.Windows.Forms.Label termthree;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }
