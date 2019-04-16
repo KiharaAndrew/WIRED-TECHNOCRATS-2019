@@ -36,7 +36,7 @@
     <Grid Background="LightGray">
         <Grid Height="70" VerticalAlignment="Top" Background="#FF0F89CF">
             <TextBlock Text="MwalimuApp" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" ></TextBlock>
-            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White" Background="#FF0F89CF" BorderBrush="{x:Null}" Width="91"  >
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White" Background="#FF0F89CF" BorderBrush="{x:Null}" Width="91" Click="Exit_Click">
                 <material:PackIcon Kind="Power" Foreground="White"  Height="22" Width="58"></material:PackIcon>
             </Button>
 

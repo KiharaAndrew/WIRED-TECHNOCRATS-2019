@@ -54,6 +54,11 @@ namespace MwalimuApp
         {
             MainFrame.Content = new EnterMarks();
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 
