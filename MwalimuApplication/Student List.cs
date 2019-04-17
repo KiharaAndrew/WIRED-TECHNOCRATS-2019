@@ -17,7 +17,8 @@ namespace MwalimuApplication
         public Student_List()
         {
             InitializeComponent();
-            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Lynette\\source\\repos\\MwalimuApplication\\DataStudent.accdb; Persist Security Info=False";
+            string WorkingDirectory = Application.StartupPath + "\\";
+            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + WorkingDirectory + "DataStudent.accdb; Persist Security Info=False";
         }
 
         private void Student_List_Load(object sender, EventArgs e)
@@ -33,7 +34,9 @@ namespace MwalimuApplication
                 OleDbDataAdapter da = new OleDbDataAdapter(command);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+                
                 bunifuCustomDataGrid1.DataSource = dt;
+                this.bunifuCustomDataGrid1.Sort(this.bunifuCustomDataGrid1.Columns[0], ListSortDirection.Descending);
 
                 connection.Close();
             }

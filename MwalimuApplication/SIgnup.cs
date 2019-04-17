@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-
-
+using System.IO;
 
 namespace MwalimuApplication
 {
     public partial class SIgnup : Form
     {
         private OleDbConnection connection = new OleDbConnection();
-        
+        public string filepath;
         public SIgnup()
         {
 
             InitializeComponent();
-            
-            connection.ConnectionString ="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Lynette\\source\\repos\\MwalimuApplication\\DataStudent.accdb; Persist Security Info=False";
+
+            string WorkingDirectory = Application.StartupPath + "\\";
+            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + WorkingDirectory + "DataStudent.accdb; Persist Security Info=False";
         }
         
         private void SIgnup_Load(object sender, EventArgs e)
@@ -53,6 +53,10 @@ namespace MwalimuApplication
                 {
                     imageLocation = dialog.FileName;
                     pictureBox1.ImageLocation = imageLocation;
+                    string source = dialog.FileName;
+                    string dest = Application.StartupPath + "\\Images\\" + Path.GetFileName(source);
+                    File.Copy(source, dest);
+                    filepath = dest;
                     bunifuTileButton1.Visible = false;
                 }
             }
@@ -85,14 +89,15 @@ namespace MwalimuApplication
                         connection.Open();
                         OleDbCommand command = new OleDbCommand();
                         command.Connection = connection;
-                        command.CommandText = "insert into Login ([Username],[Password],[Confirm Password],[First Name],[Last Name],[Email]) " +
-                            "values('" + Username.Text + "','" + Password.Text + "','" + Conpassword.Text + "','" + fname.Text + "','" + lname.Text + "','" + email.Text + "')";
+                        command.CommandText = "insert into Login ([Username],[Password],[Confirm Password],[First Name],[Last Name],[Email],[Role]) values('" + Username.Text + "','" + Password.Text + "','" + Conpassword.Text + "','" + fname.Text + "','" + lname.Text + "','" + email.Text + "',?)";
 
                         command.ExecuteNonQuery();
                         checkConnection.Text = "Data saved successfully";
                         connection.Close();
-                        Dashboard home = new Dashboard(Username.Text);
-                        home.ShowDialog();
+                        Login login = new Login();
+                        login.ShowDialog();
+                        this.Hide();
+                       
                     }
                     catch (Exception ex)
                     {
@@ -197,24 +202,24 @@ namespace MwalimuApplication
             Username.ForeColor = Color.FromArgb(78, 184, 206);
 
             fpic.BackColor = Color.FromArgb(34, 36, 49);
-            panelfirst.BackColor = Color.WhiteSmoke;
-            fname.ForeColor = Color.WhiteSmoke;
+            panelfirst.BackColor = Color.DarkSlateGray;
+            fname.ForeColor = Color.DarkSlateGray;
 
             lpic.BackColor = Color.FromArgb(34, 36, 49);
-            panellast.BackColor = Color.WhiteSmoke;
-            lname.ForeColor = Color.WhiteSmoke;
+            panellast.BackColor = Color.DarkSlateGray;
+            lname.ForeColor = Color.DarkSlateGray;
 
             epic.BackColor = Color.FromArgb(34, 36, 49);
-            panelemail.BackColor = Color.WhiteSmoke;
-            email.ForeColor = Color.WhiteSmoke;
+            panelemail.BackColor = Color.DarkSlateGray;
+            email.ForeColor = Color.DarkSlateGray;
 
             paspic.BackColor = Color.FromArgb(34, 36, 49);
-            panelpass.BackColor = Color.WhiteSmoke;
-            Password.ForeColor = Color.WhiteSmoke;
+            panelpass.BackColor = Color.DarkSlateGray;
+            Password.ForeColor = Color.DarkSlateGray;
 
             Conpassword.BackColor = Color.FromArgb(34, 36, 49);
-            panelconpas.BackColor = Color.WhiteSmoke;
-            Conpassword.ForeColor = Color.WhiteSmoke;
+            panelconpas.BackColor = Color.DarkSlateGray;
+            Conpassword.ForeColor = Color.DarkSlateGray;
         }
 
         private void Password_TextChanged(object sender, EventArgs e)
@@ -226,24 +231,24 @@ namespace MwalimuApplication
             Password.ForeColor = Color.FromArgb(78, 184, 206);
 
             fpic.BackColor = Color.FromArgb(34, 36, 49);
-            panelfirst.BackColor = Color.WhiteSmoke;
-            fname.ForeColor = Color.WhiteSmoke;
+            panelfirst.BackColor = Color.DarkSlateGray;
+            fname.ForeColor = Color.DarkSlateGray;
 
             lpic.BackColor = Color.FromArgb(34, 36, 49);
-            panellast.BackColor = Color.WhiteSmoke;
-            lname.ForeColor = Color.WhiteSmoke;
+            panellast.BackColor = Color.DarkSlateGray;
+            lname.ForeColor = Color.DarkSlateGray;
 
             epic.BackColor = Color.FromArgb(34, 36, 49);
-            panelemail.BackColor = Color.WhiteSmoke;
-            email.ForeColor = Color.WhiteSmoke;
+            panelemail.BackColor = Color.DarkSlateGray;
+            email.ForeColor = Color.DarkSlateGray;
 
             Username.BackColor = Color.FromArgb(34, 36, 49);
-            paneluser.BackColor = Color.WhiteSmoke;
-            Username.ForeColor = Color.WhiteSmoke;
+            paneluser.BackColor = Color.DarkSlateGray;
+            Username.ForeColor = Color.DarkSlateGray;
 
             Conpassword.BackColor = Color.FromArgb(34, 36, 49);
-            panelconpas.BackColor = Color.WhiteSmoke;
-            Conpassword.ForeColor = Color.WhiteSmoke;
+            panelconpas.BackColor = Color.DarkSlateGray;
+            Conpassword.ForeColor = Color.DarkSlateGray;
         }
 
         private void Conpassword_TextChanged(object sender, EventArgs e)
@@ -256,24 +261,24 @@ namespace MwalimuApplication
             Conpassword.ForeColor = Color.FromArgb(78, 184, 206);
 
             fpic.BackColor = Color.FromArgb(34, 36, 49);
-            panelfirst.BackColor = Color.WhiteSmoke;
-            fname.ForeColor = Color.WhiteSmoke;
+            panelfirst.BackColor = Color.DarkSlateGray;
+            fname.ForeColor = Color.DarkSlateGray;
 
             lpic.BackColor = Color.FromArgb(34, 36, 49);
-            panellast.BackColor = Color.WhiteSmoke;
-            lname.ForeColor = Color.WhiteSmoke;
+            panellast.BackColor = Color.DarkSlateGray;
+            lname.ForeColor = Color.DarkSlateGray;
 
             epic.BackColor = Color.FromArgb(34, 36, 49);
-            panelemail.BackColor = Color.WhiteSmoke;
-            email.ForeColor = Color.WhiteSmoke;
+            panelemail.BackColor = Color.DarkSlateGray;
+            email.ForeColor = Color.DarkSlateGray;
 
             Username.BackColor = Color.FromArgb(34, 36, 49);
-            paneluser.BackColor = Color.WhiteSmoke;
-            Username.ForeColor = Color.WhiteSmoke;
+            paneluser.BackColor = Color.DarkSlateGray;
+            Username.ForeColor = Color.DarkSlateGray;
 
             paspic.BackColor = Color.FromArgb(34, 36, 49);
-            panelpass.BackColor = Color.WhiteSmoke;
-            Password.ForeColor = Color.WhiteSmoke;
+            panelpass.BackColor = Color.DarkSlateGray;
+            Password.ForeColor = Color.DarkSlateGray;
 
         }
 

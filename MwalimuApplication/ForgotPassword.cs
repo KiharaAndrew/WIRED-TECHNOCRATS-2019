@@ -17,7 +17,8 @@ namespace MwalimuApplication
         public ForgotPassword()
         {
             InitializeComponent();
-            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Lynette\\source\\repos\\MwalimuApplication\\DataStudent.accdb; Persist Security Info=False";
+            string WorkingDirectory = Application.StartupPath + "\\";
+            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + WorkingDirectory + "DataStudent.accdb; Persist Security Info=False";
         }
 
         private void ForgotPassword_Load(object sender, EventArgs e)
@@ -44,27 +45,22 @@ namespace MwalimuApplication
                 MessageBox.Show("Please fill all the available fields");
                 connection.Close();
             }
-            else if (Conpassword.Text != Newpassword.Text)
-            {
-                checkConnection.Text = "Your passwords do not match";
-                checkConnection.Visible = Visible;
-                connection.Close();
-            }
-            else
+            if (materialSingleLineTextField1.Text == materialSingleLineTextField2.Text)
             {
                 try
                 {
                     connection.Open();
                     OleDbCommand command = new OleDbCommand();
                     command.Connection = connection;
-                    string query = "update Login set [Username]='" + materialSingleLineTextField3.Text + "',[Password]='" + materialSingleLineTextField1.Text + "',[Confirm Password]='" + materialSingleLineTextField2.Text + "' where [Username]='" + materialSingleLineTextField3.Text + "')";
+                    string query = "update Login set [Username]='" + materialSingleLineTextField3.Text + "',[Password]='" + materialSingleLineTextField1.Text + "',[Confirm Password]='" + materialSingleLineTextField2.Text + "' where [Username]='" + materialSingleLineTextField3.Text + "'";
                     command.CommandText = query;
                     command.ExecuteNonQuery();
                     MessageBox.Show(query);
                     checkConnection.Text = "Data edited successfully";
+                    checkConnection.Visible = Visible;
                     connection.Close();
                     Login login = new Login();
-                    this.Close();
+                    this.Hide();
                     login.ShowDialog();
                 }
                 catch (Exception ex)
@@ -73,6 +69,14 @@ namespace MwalimuApplication
                     connection.Close();
                 }
             }
+            else
+            {
+                checkConnection.Text = "Your passwords do not match";
+                checkConnection.Visible = Visible;
+                connection.Close();
+            }
+
+            
         }
 
         private void Label4_Click(object sender, EventArgs e)

@@ -23,7 +23,7 @@ namespace MwalimuApplication
             time.Text = DateTime.Now.ToLongTimeString();
             date.Text = DateTime.Now.ToLongDateString();
             panel2.Visible = false;
-
+            
         }
 
         private void MaterialFlatButton1_Click(object sender, EventArgs e)
@@ -226,6 +226,7 @@ namespace MwalimuApplication
         private void Home_Load(object sender, EventArgs e)
         {
             bunifuFormFadeTransition1.ShowAsyc(this);
+            
         }
 
         private void PictureBox4_Click(object sender, EventArgs e)

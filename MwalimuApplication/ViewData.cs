@@ -17,7 +17,8 @@ namespace MwalimuApplication
         public ViewData()
         {
             InitializeComponent();
-            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Lynette\\source\\repos\\MwalimuApplication\\DataStudent.accdb; Persist Security Info=False";
+            string WorkingDirectory = Application.StartupPath + "\\";
+            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + WorkingDirectory + "DataStudent.accdb; Persist Security Info=False";
         }
 
         private void ViewData_Load(object sender, EventArgs e)
