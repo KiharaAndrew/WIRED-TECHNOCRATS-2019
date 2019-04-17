@@ -35,8 +35,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.materialSingleLineTextField4 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -53,7 +51,6 @@
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +59,7 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "Admission Number";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(221, 264);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(204, 147);
             this.materialSingleLineTextField1.MaxLength = 32767;
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
@@ -86,38 +83,11 @@
             this.comboBox1.Text = "Select Admission Number";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
-            // bunifuTileButton1
-            // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuTileButton1.color = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(98)))), ((int)(((byte)(212)))));
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.DodgerBlue;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
-            this.bunifuTileButton1.ImagePosition = 20;
-            this.bunifuTileButton1.ImageZoom = 50;
-            this.bunifuTileButton1.LabelPosition = 41;
-            this.bunifuTileButton1.LabelText = "Tile 1";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(196, 99);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(144, 145);
-            this.bunifuTileButton1.TabIndex = 24;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(196, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 145);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            // 
             // materialSingleLineTextField4
             // 
             this.materialSingleLineTextField4.Depth = 0;
             this.materialSingleLineTextField4.Hint = "Student Name";
-            this.materialSingleLineTextField4.Location = new System.Drawing.Point(221, 305);
+            this.materialSingleLineTextField4.Location = new System.Drawing.Point(204, 188);
             this.materialSingleLineTextField4.MaxLength = 32767;
             this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
@@ -134,7 +104,7 @@
             // 
             this.materialSingleLineTextField3.Depth = 0;
             this.materialSingleLineTextField3.Hint = "Age";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(221, 348);
+            this.materialSingleLineTextField3.Location = new System.Drawing.Point(204, 231);
             this.materialSingleLineTextField3.MaxLength = 32767;
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
@@ -151,7 +121,7 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "Dorm Name";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(221, 391);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(204, 274);
             this.materialSingleLineTextField2.MaxLength = 32767;
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
@@ -271,7 +241,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Kristen ITC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(73, 265);
+            this.label1.Location = new System.Drawing.Point(56, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 22);
             this.label1.TabIndex = 37;
@@ -282,7 +252,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Kristen ITC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(99, 306);
+            this.label2.Location = new System.Drawing.Point(82, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 22);
             this.label2.TabIndex = 38;
@@ -293,7 +263,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Kristen ITC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(176, 348);
+            this.label3.Location = new System.Drawing.Point(159, 231);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 22);
             this.label3.TabIndex = 39;
@@ -304,7 +274,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Kristen ITC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(117, 391);
+            this.label4.Location = new System.Drawing.Point(100, 274);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 22);
             this.label4.TabIndex = 40;
@@ -314,6 +284,8 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -393,8 +365,6 @@
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bunifuTileButton1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialSingleLineTextField4);
             this.Controls.Add(this.materialSingleLineTextField3);
             this.Controls.Add(this.materialSingleLineTextField2);
@@ -403,7 +373,6 @@
             this.Name = "ViewData";
             this.Text = "ViewData";
             this.Load += new System.EventHandler(this.ViewData_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -416,8 +385,6 @@
 
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField4;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField3;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;

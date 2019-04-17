@@ -44,8 +44,8 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Username = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.Password = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.Username = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -88,7 +88,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(48, 226);
+            this.pictureBox2.Location = new System.Drawing.Point(50, 223);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,7 +98,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(47, 284);
+            this.pictureBox3.Location = new System.Drawing.Point(49, 281);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(28, 30);
@@ -170,11 +170,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Kristen ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(328, 3);
+            this.label1.Location = new System.Drawing.Point(328, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 29);
+            this.label1.Size = new System.Drawing.Size(31, 32);
             this.label1.TabIndex = 24;
             this.label1.Text = "X";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -186,42 +186,28 @@
             // 
             // Username
             // 
-            this.Username.Depth = 0;
-            this.Username.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Username.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Username.Hint = "Username";
-            this.Username.Location = new System.Drawing.Point(81, 234);
-            this.Username.MaxLength = 32767;
-            this.Username.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Username.Location = new System.Drawing.Point(83, 225);
             this.Username.Name = "Username";
-            this.Username.PasswordChar = '\0';
-            this.Username.SelectedText = "";
-            this.Username.SelectionLength = 0;
-            this.Username.SelectionStart = 0;
-            this.Username.Size = new System.Drawing.Size(173, 23);
-            this.Username.TabIndex = 25;
-            this.Username.TabStop = false;
-            this.Username.UseSystemPasswordChar = false;
+            this.Username.Size = new System.Drawing.Size(225, 22);
+            this.Username.TabIndex = 26;
+            this.Username.Text = "Username";
             this.Username.Click += new System.EventHandler(this.Username_Click);
             // 
             // Password
             // 
-            this.Password.Depth = 0;
-            this.Password.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Password.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Password.Hint = "Password";
-            this.Password.Location = new System.Drawing.Point(81, 291);
-            this.Password.MaxLength = 32767;
-            this.Password.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Password.Location = new System.Drawing.Point(83, 284);
             this.Password.Name = "Password";
-            this.Password.PasswordChar = '\0';
-            this.Password.SelectedText = "";
-            this.Password.SelectionLength = 0;
-            this.Password.SelectionStart = 0;
-            this.Password.Size = new System.Drawing.Size(173, 23);
-            this.Password.TabIndex = 26;
-            this.Password.TabStop = false;
-            this.Password.UseSystemPasswordChar = false;
+            this.Password.Size = new System.Drawing.Size(225, 22);
+            this.Password.TabIndex = 27;
+            this.Password.Text = "Password";
             this.Password.Click += new System.EventHandler(this.Password_Click);
             // 
             // Login
@@ -275,8 +261,8 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField Password;
-        private MaterialSkin.Controls.MaterialSingleLineTextField Username;
+        private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.TextBox Username;
     }
 }
 

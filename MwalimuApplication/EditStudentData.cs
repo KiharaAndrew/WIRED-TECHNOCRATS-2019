@@ -15,14 +15,17 @@ namespace MwalimuApplication
     public partial class EditStudentData : Form
     {
         OleDbConnection connection = new OleDbConnection();
+        AddStudent add = new AddStudent();
         public EditStudentData()
         {
             InitializeComponent();
-            
-            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Lynette\\source\\repos\\MwalimuApplication\\DataStudent.accdb; Persist Security Info=False";
+
+            string WorkingDirectory = Application.StartupPath + "\\";
+            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + WorkingDirectory + "DataStudent.accdb; Persist Security Info=False";
         }
         private void EditStudentData_Load(object sender, EventArgs e)
         {
+           
             connection.Open();
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
@@ -34,7 +37,7 @@ namespace MwalimuApplication
             {
                 comboBox1.Items.Add(reader["AdmissionNumber"].ToString());
             }
-            bunifuCustomLabel1.Text = "Data edited successfully";
+            Label.Text = "Data edited successfully";
             connection.Close();
         }
 
@@ -45,11 +48,11 @@ namespace MwalimuApplication
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                string query = "update StudentDetails set [AdmissionNumber]='" + materialSingleLineTextField1.Text + "', [StudentName]='" + materialSingleLineTextField4.Text + "',[Age]='" + materialSingleLineTextField3.Text + "',[Dorm]='" + materialSingleLineTextField2.Text + "' where [AdmissionNumber]='" + materialSingleLineTextField1.Text + "')";
+                string query = "update StudentDetails set [AdmissionNumber]='" + materialSingleLineTextField1.Text + "', [StudentName]='" + materialSingleLineTextField4.Text + "',[Age]='" + materialSingleLineTextField3.Text + "',[Dorm]='" + materialSingleLineTextField2.Text + "' where [AdmissionNumber]='" + materialSingleLineTextField1.Text + "'";
                 command.CommandText = query;
                 command.ExecuteNonQuery();
                 MessageBox.Show(query);
-                bunifuCustomLabel1.Text = "Data edited successfully";
+                Label.Text = "Data edited successfully";
                 connection.Close();
                
             }
@@ -60,10 +63,7 @@ namespace MwalimuApplication
             }
         }
 
-        private void BunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -81,7 +81,7 @@ namespace MwalimuApplication
                 materialSingleLineTextField3.Text= reader["Age"].ToString();
                 materialSingleLineTextField2.Text= reader["Dorm"].ToString();
             }
-            bunifuCustomLabel1.Text = "Data edited successfully";
+            Label.Text = "Data edited successfully";
             connection.Close();
         }
 
@@ -97,7 +97,7 @@ namespace MwalimuApplication
 
                 command.ExecuteNonQuery();
                
-                bunifuCustomLabel1.Text = "Data deleted successfully";
+                Label.Text = "Data deleted successfully";
                 connection.Close();
 
             }
@@ -114,7 +114,23 @@ namespace MwalimuApplication
 
         private void BunifuThinButton23_Click(object sender, EventArgs e)
         {
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "delete from StudentDetails where [AdmissionNumber]='" + comboBox1.Text + "'";
 
+                command.ExecuteNonQuery();
+
+                connection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+                connection.Close();
+            }
         }
     }
 }

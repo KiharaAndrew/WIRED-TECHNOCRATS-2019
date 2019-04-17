@@ -55,6 +55,7 @@
             this.Term3 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Term2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Term1 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -466,12 +467,25 @@
             this.Term1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Term1.Click += new System.EventHandler(this.Term1_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(622, 355);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 23);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "label11";
+            this.label11.Visible = false;
+            // 
             // AddMarks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(1000, 450);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.Term1);
             this.Controls.Add(this.Term2);
             this.Controls.Add(this.Term3);
@@ -533,5 +547,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Term1;
         private Bunifu.Framework.UI.BunifuThinButton2 Term2;
         private Bunifu.Framework.UI.BunifuThinButton2 Term3;
+        private System.Windows.Forms.Label label11;
     }
 }

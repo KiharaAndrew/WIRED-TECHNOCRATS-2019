@@ -627,7 +627,7 @@
             this.viewmarklist.ImagePosition = 24;
             this.viewmarklist.ImageZoom = 40;
             this.viewmarklist.LabelPosition = 50;
-            this.viewmarklist.LabelText = "Marklist";
+            this.viewmarklist.LabelText = "The Marklist";
             this.viewmarklist.Location = new System.Drawing.Point(552, 333);
             this.viewmarklist.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.viewmarklist.Name = "viewmarklist";

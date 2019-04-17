@@ -19,7 +19,8 @@ namespace MwalimuApplication
         public EditMarks()
         {
             InitializeComponent();
-            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Lynette\\source\\repos\\MwalimuApplication\\DataStudent.accdb; Persist Security Info=False";
+            string WorkingDirectory = Application.StartupPath + "\\";
+            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + WorkingDirectory + "DataStudent.accdb; Persist Security Info=False";
         }
 
        
@@ -59,23 +60,7 @@ namespace MwalimuApplication
         private void BunifuThinButton23_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = "delete from Term1Marks 
-
-                command.ExecuteNonQuery();
-
-                connection.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error" + ex);
-                connection.Close();
-            }
+           
         }
 
         private void Term1_Click(object sender, EventArgs e)
@@ -87,7 +72,8 @@ namespace MwalimuApplication
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = "update Term1Marks set [AdmissionNumber]='" + bunifuMaterialTextbox9.Text + "',[Mathematics]='" + bunifuMaterialTextbox1.Text + "',[English]='" + bunifuMaterialTextbox2.Text + "',[Kiswahili]='" + bunifuMaterialTextbox3.Text + "',[Science]='" + bunifuMaterialTextbox4.Text + "',[SST/RE]='" + bunifuMaterialTextbox5.Text + "',[Average]='" + bunifuMaterialTextbox7.Text + "',[Total]='" + bunifuMaterialTextbox6.Text + "',[Grade]='" + bunifuMaterialTextbox8.Text + "' where [AdmissionNumber]='" + bunifuMaterialTextbox9.Text + "'";
-
+                label11.Text = "Data Updated Successfully";
+                label11.Visible = Visible;
                 command.ExecuteNonQuery();
 
                 connection.Close();
@@ -108,7 +94,8 @@ namespace MwalimuApplication
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = "update Term2Marks set [AdmissionNumber]='" + bunifuMaterialTextbox9.Text + "',[Mathematics]='" + bunifuMaterialTextbox1.Text + "',[English]='" + bunifuMaterialTextbox2.Text + "',[Kiswahili]='" + bunifuMaterialTextbox3.Text + "',[Science]='" + bunifuMaterialTextbox4.Text + "',[SST/RE]='" + bunifuMaterialTextbox5.Text + "',[Average]='" + bunifuMaterialTextbox7.Text + "',[Total]='" + bunifuMaterialTextbox6.Text + "',[Grade]='" + bunifuMaterialTextbox8.Text + "' where [AdmissionNumber]='" + bunifuMaterialTextbox9.Text + "'";
-
+                label11.Text = "Data Updated Successfully";
+                label11.Visible = Visible;
                 command.ExecuteNonQuery();
 
                 connection.Close();
@@ -129,7 +116,8 @@ namespace MwalimuApplication
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = "update Term3Marks set [AdmissionNumber]='" + bunifuMaterialTextbox9.Text + "',[Mathematics]='" + bunifuMaterialTextbox1.Text + "',[English]='" + bunifuMaterialTextbox2.Text + "',[Kiswahili]='" + bunifuMaterialTextbox3.Text + "',[Science]='" + bunifuMaterialTextbox4.Text + "',[SST/RE]='" + bunifuMaterialTextbox5.Text + "',[Average]='" + bunifuMaterialTextbox7.Text + "',[Total]='" + bunifuMaterialTextbox6.Text + "',[Grade]='" + bunifuMaterialTextbox8.Text + "' where [AdmissionNumber]='" + bunifuMaterialTextbox9.Text + "'";
-
+                label11.Text = "Data Updated Successfully";
+                label11.Visible = Visible;
                 command.ExecuteNonQuery();
 
                 connection.Close();
@@ -156,7 +144,8 @@ namespace MwalimuApplication
             {
                 comboBox1.Items.Add(reader["AdmissionNumber"].ToString());
             }
-
+            label11.Text = "Data Loaded Successfully";
+            label11.Visible = Visible;
             connection.Close();
         }
 
@@ -174,7 +163,8 @@ namespace MwalimuApplication
             {
                 comboBox1.Items.Add(reader["AdmissionNumber"].ToString());
             }
-
+            label11.Text = "Data Loaded Successfully";
+            label11.Visible = Visible;
             connection.Close();
         }
 
@@ -193,8 +183,75 @@ namespace MwalimuApplication
             {
                 comboBox1.Items.Add(reader["AdmissionNumber"].ToString());
             }
-
+            label11.Text = "Data Loaded Successfully";
+            label11.Visible = Visible;
             connection.Close();
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "delete from Term1Marks where [AdmissionNumber]='" + comboBox1.Text + "'";
+                label11.Text = "Data Deleted Successfully";
+                label11.Visible = Visible;
+                command.ExecuteNonQuery();
+
+                connection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+                connection.Close();
+            }
+        }
+
+        private void Delete1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "delete from Term2Marks where [AdmissionNumber]='" + comboBox1.Text + "'";
+                label11.Text = "Data Deleted Successfully";
+                label11.Visible = Visible;
+                command.ExecuteNonQuery();
+
+                connection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+                connection.Close();
+            }
+        }
+
+        private void Delete3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "delete from Term3Marks where [AdmissionNumber]='" + comboBox1.Text + "'";
+                label11.Text = "Data Deleted Successfully";
+                label11.Visible = Visible;
+                command.ExecuteNonQuery();
+
+                connection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+                connection.Close();
+            }
         }
     }
     

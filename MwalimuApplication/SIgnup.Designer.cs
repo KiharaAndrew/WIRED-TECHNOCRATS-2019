@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SIgnup));
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,13 +50,13 @@
             this.Close = new System.Windows.Forms.Label();
             this.back = new System.Windows.Forms.PictureBox();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.fname = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.Password = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.Username = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.email = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.Conpassword = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.lname = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.email = new System.Windows.Forms.TextBox();
+            this.lname = new System.Windows.Forms.TextBox();
+            this.fname = new System.Windows.Forms.TextBox();
+            this.Username = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
+            this.Conpassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paspic)).BeginInit();
@@ -269,11 +269,11 @@
             // 
             this.Close.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.Close, BunifuAnimatorNS.DecorationType.None);
-            this.Close.Font = new System.Drawing.Font("Kristen ITC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Close.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Close.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Close.Location = new System.Drawing.Point(324, 2);
             this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(35, 36);
+            this.Close.Size = new System.Drawing.Size(31, 32);
             this.Close.TabIndex = 36;
             this.Close.Text = "X";
             this.Close.Click += new System.EventHandler(this.Close_Click);
@@ -294,152 +294,111 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(50);
-            animation1.RotateCoeff = 0.3F;
-            animation1.RotateLimit = 0.2F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
-            // 
-            // fname
-            // 
-            this.bunifuTransition1.SetDecoration(this.fname, BunifuAnimatorNS.DecorationType.None);
-            this.fname.Depth = 0;
-            this.fname.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fname.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.fname.Hint = "First Name";
-            this.fname.Location = new System.Drawing.Point(58, 207);
-            this.fname.MaxLength = 32767;
-            this.fname.MouseState = MaterialSkin.MouseState.HOVER;
-            this.fname.Name = "fname";
-            this.fname.PasswordChar = '\0';
-            this.fname.SelectedText = "";
-            this.fname.SelectionLength = 0;
-            this.fname.SelectionStart = 0;
-            this.fname.Size = new System.Drawing.Size(173, 23);
-            this.fname.TabIndex = 38;
-            this.fname.TabStop = false;
-            this.fname.UseSystemPasswordChar = false;
-            this.fname.Click += new System.EventHandler(this.Fname_TextChanged);
-            // 
-            // Password
-            // 
-            this.bunifuTransition1.SetDecoration(this.Password, BunifuAnimatorNS.DecorationType.None);
-            this.Password.Depth = 0;
-            this.Password.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Password.Hint = "Password";
-            this.Password.Location = new System.Drawing.Point(58, 368);
-            this.Password.MaxLength = 32767;
-            this.Password.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Password.Name = "Password";
-            this.Password.PasswordChar = '\0';
-            this.Password.SelectedText = "";
-            this.Password.SelectionLength = 0;
-            this.Password.SelectionStart = 0;
-            this.Password.Size = new System.Drawing.Size(173, 23);
-            this.Password.TabIndex = 39;
-            this.Password.TabStop = false;
-            this.Password.UseSystemPasswordChar = false;
-            this.Password.Click += new System.EventHandler(this.Password_TextChanged);
-            // 
-            // Username
-            // 
-            this.bunifuTransition1.SetDecoration(this.Username, BunifuAnimatorNS.DecorationType.None);
-            this.Username.Depth = 0;
-            this.Username.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Username.Hint = "Username";
-            this.Username.Location = new System.Drawing.Point(58, 328);
-            this.Username.MaxLength = 32767;
-            this.Username.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Username.Name = "Username";
-            this.Username.PasswordChar = '\0';
-            this.Username.SelectedText = "";
-            this.Username.SelectionLength = 0;
-            this.Username.SelectionStart = 0;
-            this.Username.Size = new System.Drawing.Size(173, 23);
-            this.Username.TabIndex = 40;
-            this.Username.TabStop = false;
-            this.Username.UseSystemPasswordChar = false;
-            this.Username.Click += new System.EventHandler(this.Username_TextChanged);
-            // 
-            // email
-            // 
-            this.bunifuTransition1.SetDecoration(this.email, BunifuAnimatorNS.DecorationType.None);
-            this.email.Depth = 0;
-            this.email.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.email.Hint = "someone@gmail.com";
-            this.email.Location = new System.Drawing.Point(58, 289);
-            this.email.MaxLength = 32767;
-            this.email.MouseState = MaterialSkin.MouseState.HOVER;
-            this.email.Name = "email";
-            this.email.PasswordChar = '\0';
-            this.email.SelectedText = "";
-            this.email.SelectionLength = 0;
-            this.email.SelectionStart = 0;
-            this.email.Size = new System.Drawing.Size(173, 23);
-            this.email.TabIndex = 41;
-            this.email.TabStop = false;
-            this.email.UseSystemPasswordChar = false;
-            this.email.Click += new System.EventHandler(this.Email_TextChanged);
-            // 
-            // Conpassword
-            // 
-            this.bunifuTransition1.SetDecoration(this.Conpassword, BunifuAnimatorNS.DecorationType.None);
-            this.Conpassword.Depth = 0;
-            this.Conpassword.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Conpassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Conpassword.Hint = "Confirm Password";
-            this.Conpassword.Location = new System.Drawing.Point(58, 403);
-            this.Conpassword.MaxLength = 32767;
-            this.Conpassword.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Conpassword.Name = "Conpassword";
-            this.Conpassword.PasswordChar = '\0';
-            this.Conpassword.SelectedText = "";
-            this.Conpassword.SelectionLength = 0;
-            this.Conpassword.SelectionStart = 0;
-            this.Conpassword.Size = new System.Drawing.Size(173, 23);
-            this.Conpassword.TabIndex = 42;
-            this.Conpassword.TabStop = false;
-            this.Conpassword.UseSystemPasswordChar = false;
-            this.Conpassword.Click += new System.EventHandler(this.Conpassword_TextChanged);
-            // 
-            // lname
-            // 
-            this.bunifuTransition1.SetDecoration(this.lname, BunifuAnimatorNS.DecorationType.None);
-            this.lname.Depth = 0;
-            this.lname.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lname.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lname.Hint = "Last Name";
-            this.lname.Location = new System.Drawing.Point(58, 249);
-            this.lname.MaxLength = 32767;
-            this.lname.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lname.Name = "lname";
-            this.lname.PasswordChar = '\0';
-            this.lname.SelectedText = "";
-            this.lname.SelectionLength = 0;
-            this.lname.SelectionStart = 0;
-            this.lname.Size = new System.Drawing.Size(173, 23);
-            this.lname.TabIndex = 43;
-            this.lname.TabStop = false;
-            this.lname.UseSystemPasswordChar = false;
-            this.lname.Click += new System.EventHandler(this.Lname_TextChanged);
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(50);
+            animation2.RotateCoeff = 0.3F;
+            animation2.RotateLimit = 0.2F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation2;
             // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // email
+            // 
+            this.email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.email, BunifuAnimatorNS.DecorationType.None);
+            this.email.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.email.Location = new System.Drawing.Point(60, 283);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(225, 22);
+            this.email.TabIndex = 44;
+            this.email.Text = "Email";
+            this.email.Click += new System.EventHandler(this.Email_TextChanged);
+            // 
+            // lname
+            // 
+            this.lname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.lname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.lname, BunifuAnimatorNS.DecorationType.None);
+            this.lname.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lname.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lname.Location = new System.Drawing.Point(60, 243);
+            this.lname.Name = "lname";
+            this.lname.Size = new System.Drawing.Size(225, 22);
+            this.lname.TabIndex = 45;
+            this.lname.Text = "Last Name";
+            this.lname.Click += new System.EventHandler(this.Lname_TextChanged);
+            // 
+            // fname
+            // 
+            this.fname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.fname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.fname, BunifuAnimatorNS.DecorationType.None);
+            this.fname.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fname.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.fname.Location = new System.Drawing.Point(60, 205);
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(225, 22);
+            this.fname.TabIndex = 46;
+            this.fname.Text = "First Name";
+            this.fname.Click += new System.EventHandler(this.Fname_TextChanged);
+            // 
+            // Username
+            // 
+            this.Username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.Username, BunifuAnimatorNS.DecorationType.None);
+            this.Username.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Username.Location = new System.Drawing.Point(60, 319);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(225, 22);
+            this.Username.TabIndex = 47;
+            this.Username.Text = "Username";
+            this.Username.Click += new System.EventHandler(this.Username_TextChanged);
+            // 
+            // Password
+            // 
+            this.Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.Password, BunifuAnimatorNS.DecorationType.None);
+            this.Password.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Password.Location = new System.Drawing.Point(60, 359);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(225, 22);
+            this.Password.TabIndex = 48;
+            this.Password.Text = "Password";
+            this.Password.Click += new System.EventHandler(this.Password_TextChanged);
+            // 
+            // Conpassword
+            // 
+            this.Conpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Conpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.Conpassword, BunifuAnimatorNS.DecorationType.None);
+            this.Conpassword.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Conpassword.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Conpassword.Location = new System.Drawing.Point(60, 397);
+            this.Conpassword.Name = "Conpassword";
+            this.Conpassword.Size = new System.Drawing.Size(225, 22);
+            this.Conpassword.TabIndex = 49;
+            this.Conpassword.Text = "Confirm Password";
+            this.Conpassword.Click += new System.EventHandler(this.Conpassword_TextChanged);
             // 
             // SIgnup
             // 
@@ -447,12 +406,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(361, 562);
-            this.Controls.Add(this.lname);
             this.Controls.Add(this.Conpassword);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.Username);
             this.Controls.Add(this.Password);
+            this.Controls.Add(this.Username);
             this.Controls.Add(this.fname);
+            this.Controls.Add(this.lname);
+            this.Controls.Add(this.email);
             this.Controls.Add(this.back);
             this.Controls.Add(this.Close);
             this.Controls.Add(this.panelpass);
@@ -513,11 +472,11 @@
         private System.Windows.Forms.PictureBox back;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField lname;
-        private MaterialSkin.Controls.MaterialSingleLineTextField Conpassword;
-        private MaterialSkin.Controls.MaterialSingleLineTextField email;
-        private MaterialSkin.Controls.MaterialSingleLineTextField Username;
-        private MaterialSkin.Controls.MaterialSingleLineTextField Password;
-        private MaterialSkin.Controls.MaterialSingleLineTextField fname;
+        private System.Windows.Forms.TextBox Conpassword;
+        private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.TextBox Username;
+        private System.Windows.Forms.TextBox fname;
+        private System.Windows.Forms.TextBox lname;
+        private System.Windows.Forms.TextBox email;
     }
 }

@@ -17,7 +17,8 @@ namespace MwalimuApplication
         public View_Marklist()
         {
             InitializeComponent();
-            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Lynette\\source\\repos\\MwalimuApplication\\DataStudent.accdb; Persist Security Info=False";
+            string WorkingDirectory = Application.StartupPath + "\\";
+            connection.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + WorkingDirectory + "DataStudent.accdb; Persist Security Info=False";
         }
 
         private void View_Marklist_Load(object sender, EventArgs e)
@@ -37,9 +38,11 @@ namespace MwalimuApplication
 
                 OleDbDataAdapter da = new OleDbDataAdapter(command);
                 DataTable dt = new DataTable();
+                
                 da.Fill(dt);
                 
                 dataGridView1.DataSource = dt;
+                this.dataGridView1.Sort(this.dataGridView1.Columns[6], ListSortDirection.Descending);
                 
                 connection.Close();
             }
@@ -64,7 +67,7 @@ namespace MwalimuApplication
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
-
+                this.dataGridView1.Sort(this.dataGridView1.Columns[6], ListSortDirection.Descending);
                 connection.Close();
             }
             catch (Exception ex)
@@ -88,7 +91,7 @@ namespace MwalimuApplication
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
-
+                this.dataGridView1.Sort(this.dataGridView1.Columns[6], ListSortDirection.Descending);
                 connection.Close();
             }
             catch (Exception ex)
@@ -102,5 +105,7 @@ namespace MwalimuApplication
         {
             this.Close();
         }
+
+       
     }
 }
